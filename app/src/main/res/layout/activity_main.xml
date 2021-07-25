@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form"
+            android:textSize="36dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtFname"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="FirstName"
+            android:text=""
+            android:textSize="24dp"/>
+
+        <EditText
+            android:id="@+id/edtLname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="LastName"
+            android:text=""
+            android:textSize="24dp"/>
+
+        <EditText
+            android:id="@+id/edtUname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username "
+            android:text=""
+            android:textSize="24dp"/>
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:text=""
+            android:inputType="textPassword"
+            android:textSize="24dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:text="Branch CE/IT"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+              >
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="17dp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="17dp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/city"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Profile Status Active/Inactive"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Register Me"
+            android:textSize="15dp"
+            android:onClick="fun1"/>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
